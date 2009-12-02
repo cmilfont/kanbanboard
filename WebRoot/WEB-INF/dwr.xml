@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+    <allow>
+        <create creator="spring" javascript="AjaxFacade">
+            <param name="beanName" value="ajaxFacade"/>
+        </create>
+		
+        <convert converter="exception" match="java.lang.Exception" >
+            <param name='include' value='message,lineNumber'/>
+        </convert>
+        
+        <convert converter="hibernate3" javascript="Story" match="org.milfont.Story"/>
+        <convert converter="hibernate3" javascript="Project" match="org.milfont.Project"/>
+        <convert converter="enum" javascript="Status" match="org.milfont.Status"></convert>
+        <convert converter="bean" javascript="DataTransferObject" match="org.milfont.DataTransferObject"></convert>
+    </allow>
+    
+</dwr>

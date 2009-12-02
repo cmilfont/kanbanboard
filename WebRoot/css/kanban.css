@@ -1,0 +1,18 @@
+.title {color:white; text-align: center; font-weight: bold;display: block;}
+
+.story {
+	float:left;
+	width: 60px;
+	margin:1em;
+	padding: 10px;
+	background-color: yellow; color:#000;
+	text-align: center; height: 80px; font-size: 10px;
+}
+
+.board2 {
+	float: left; 
+	border-right:#333 5px solid;
+	border-top:#015965 5px solid;  
+	background-color: #03899c; 
+	height:400px; width:32%;
+}
