@@ -49,7 +49,7 @@
     		<input id="project.name" name="project.name">
     		<div id="auto_project" style="display:none;"></div>
     		<br/>
-    		<input type="submit" value="Enviar">
+    		<input type="button" value="Enviar">
     		
     	</form>
     </div>
